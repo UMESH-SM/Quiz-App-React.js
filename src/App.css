@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: courier, arial, helvetica;
+  font-weight: bold;
+}
+
+.App {
+  text-align: center;
+  min-height: 100vh;
+  min-width: 100%;
+  height: fit-content;
+  width: fit-content;
+  background-color: rgb(24, 75, 122);
+  color: aliceblue;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-width: 100%;
+  width: fit-content;
+  min-height: 100vh;
+  height: fit-content;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  min-height: 70vh;
+  min-width: 80%;
+  height: fit-content;
+  width: min-content;
+  border-radius: 1%;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: rgb(12, 37, 59);
+}
+
+.question {
+  padding: 20px 10px 30px 10px;
+  font-size: 1.5em;
+}
+
+.optionsContainer {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  min-width: 100%;
+  width: fit-content;
+  min-height: 40vh;
+  height: fit-content;
+}
+
+.options,
+.rightOption {
+  min-width: 40%;
+  width: fit-content;
+  font-size: 20px;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 1%;
+  border: none;
+  background-color: rgb(109, 248, 234, 0.8);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.options:hover,
+.rightOption:hover {
+  color: rgb(109, 248, 234);
+  background-color: black;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.options:focus {
+  background-color: tomato;
+}
+
+.rightOption:focus {
+  background-color: rgb(4, 163, 4);
+}
+
+.welcomeContainer {
+  display: flex;
+  flex-direction: column;
+  min-width: 100%;
+  width: fit-content;
+  min-height: 100vh;
+  height: fit-content;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.welcomeCard {
+  display: flex;
+  flex-direction: column;
+  min-height: 70vh;
+  min-width: 80%;
+  height: fit-content;
+  width: fit-content;
+  background-color: rgba(202, 116, 17, 0.822);
+  border-radius: 1%;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.categoryCard {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  min-width: 80%;
+  width: fit-content;
+  background-color: rgba(202, 116, 17, 0.822);
+  border-radius: 1%;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.cat-row {
+  display: flex;
+  height: 70%;
+  min-width: 90%;
+  width: fit-content;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.cat-col1 {
+  display: flex;
+  min-width: 40%;
+  width: min-content;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.cat-col2 {
+  display: flex;
+  min-width: 40%;
+  width: min-content;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.cat-col1 button {
+  min-width: 90%;
+  width: min-content;
+  padding: 15px;
+  font-size: 20px;
+  border-radius: 1%;
+  color: white;
+  background-color: black;
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.cat-col2 button {
+  min-width: 90%;
+  width: min-content;
+  padding: 15px;
+  font-size: 20px;
+  border-radius: 1%;
+  color: white;
+  background-color: black;
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.cat-col1 button:hover,
+.cat-col2 button:hover {
+  color: black;
+  background-color: white;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.title {
+  padding: 0 20px;
+  min-width: 90%;
+  font-size: 3em;
+  width: fit-content;
+  color: rgb(14, 46, 77);
+}
+
+.play-btn {
+  padding: 20px 30px;
+  font-size: 20px;
+  border-radius: 1%;
+  color: white;
+  background-color: black;
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.play-btn:hover {
+  color: black;
+  background-color: white;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.scoreCard {
+  display: flex;
+  min-height: 70vh;
+  min-width: 80%;
+  width: fit-content;
+  height: fit-content;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 30px;
+  border-radius: 1%;
+  background-color: rgba(202, 116, 17, 0.822);
+}
+
+.playAgain-btn {
+  padding: 20px 30px;
+  font-size: 20px;
+  border-radius: 1%;
+  color: white;
+  background-color: black;
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.playAgain-btn:hover {
+  color: black;
+  background-color: white;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.qnumber {
+  margin-bottom: 20px;
+  width: 30px;
+  height: 30px;
+  color: black;
+  background-color: rgb(109, 248, 234, 0.8);
+  border: 4px solid rgb(12, 37, 59);
+  border-radius: 50%;
+  padding-top: 8px;
+  padding-left: 3.2px;
+  padding-right: 3.6px;
+  font-size: 20px;
+  font-weight: bold;
+}
